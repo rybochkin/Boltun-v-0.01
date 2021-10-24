@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 50
+  Height = 408
+  Top = 0
+  Width = 581
+  Caption = 'Form1'
+  ClientHeight = 388
+  ClientWidth = 581
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnResize = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.0.6.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 312
+    Top = 32
+    Width = 560
+    HideSelection = False
+    Lines.Strings = (
+      'Memo1'
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 352
+    Width = 560
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 240
+    Height = 25
+    Top = 384
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 411
+    Height = 1
+    Top = 0
+    Width = 1
+    ParentColor = False
+  end
+  object MainMenu1: TMainMenu
+    left = 8
+    object Help: TMenuItem
+      Caption = 'Help'
+      OnClick = HelpClick
+      object MenuItem1: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = MenuItem1Click
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Очистить'
+        OnClick = MenuItem2Click
+      end
+    end
+    object About: TMenuItem
+      Caption = 'About'
+      OnClick = AboutClick
+    end
+    object Close: TMenuItem
+      Caption = 'Close'
+      OnClick = CloseClick
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    left = 96
+  end
+  object Timer1: TTimer
+    left = 160
+  end
+end
